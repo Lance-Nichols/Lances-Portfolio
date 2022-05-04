@@ -28,10 +28,13 @@
         align-content: center;
     }
     #copyright {
-        margin-top: 20px;
-        text-align: center;
-        width: 100%;
+        display: none;
     }
+    #copyrightMobile {
+        text-align: center;
+        font-size: x-small;
+    }
+
     .sectionHeading {
         font-size: 3em;
     }
@@ -66,6 +69,10 @@
         font-size: smaller;
         text-align: center;
     }
+    .projectPreviews {
+        margin-bottom: 30px;
+    }
+
     #profile {
         display: flex;
         flex-wrap: wrap;
@@ -116,9 +123,253 @@
     #contactList {
         height: 100px;
     }
+
+    .linkItemFooter {
+        width: auto;
+    }
     #creditsLine {
+        margin-top: 20px;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+@media screen and (min-width: 601px) and (max-device-width : 768px) {
+
+    .mobileSectionHeading {
+        display: block;
+        line-height: 1;
+        letter-spacing: 1px;
+    }
+    .desktopSectionHeading {
         display: none;
     }
+
+    #lottieHeader {
+        width: 70%; 
+        height: auto;
+    }
+    header {
+        height: 80vh;
+    }
+    .sectionHeading {
+        font-size: 3.5em;
+    }
+    .linkItemNav a {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .rotate {
+        height: 50px;
+        width: 50px;
+    }
+    #profile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    #profilePic {
+        display: none;
+    }
+    #lancePortrait {
+        background-image: url("../images/profilePictureLance.jpg");
+        display: block;
+        background-size: cover;
+        height: 460px;
+        width: 470px;
+        border: 1px solid white;
+    }
+    
+    .profileContent {
+        display: block;
+        padding: 20px;
+    }
+    #profileIntro p, #profileIntro h3 {
+        font-size: 1.3em;
+    }
+    .marquee {
+        font-size: 2em;
+        padding-top: 10px;
+     } 
+    .typeHead6 {
+        padding-bottom: 150px;
+    }
+    .list-inline img {
+        height:30px;
+    }
+    #projectSkillsSection {
+        padding-bottom: 50px;
+    }
+    .projectPreviews {
+        margin-bottom: 30px;
+    }
+
+    #diamonShape {
+        height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #profile {
+        padding-top: 20px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .breakLineStar {
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        top: -35px;
+    }
+    .linkItemFooter {
+        padding: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .menuItem {
+        font-size: 7em;
+    }
+
+    .linkItemFooter {
+        width: auto;
+    }
+    #emailMeButton {
+        width: 300px; 
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #copyright {
+        display: none;
+    }
+    #copyrightMobile {
+        font-size: x-small;
+    }
+    #creditsLine {
+        margin-top: 20px;
+    }
+  }
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+    
+    .mobileSectionHeading {
+        display: none;
+    }
+    .desktopSectionHeading {
+        display: block;
+        letter-spacing: 1px;
+    }
+
+    #lottieHeader {
+        width: 70%; 
+        height: auto;
+    }
+    header {
+        height: 80vh;
+    }
+    .sectionHeading {
+        font-size: 3.5em;
+    }
+    .linkItemNav a {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .rotate {
+        height: 50px;
+        width: 50px;
+    }
+    .projectPreviews {
+        margin-bottom: 30px;
+    }
+
+    #profilePic {
+        height: 550px;
+        width: 550px !important;
+        z-index: 1;
+        position: relative;
+        right: -10px;
+        top: -10px;
+        display: block;
+    }
+    #profilePic {
+        background-image: url(../images/profilePictureLanceD.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: drop-shadow(3px 4px 10px rgb(200, 89, 89));
+    }
+    #lancePortrait {
+        display: none;
+    }
+    
+    #profileIntro {
+        height: 350px;
+        min-width: 450px;
+        position: relative;
+        left: -55px;
+        top: 100px;
+        z-index: 2;
+        backdrop-filter: blur(50px);
+        padding: 20px 40px;
+    }
+    #profileIntro p, #profileIntro h3 {
+        font-size: 1.3em;
+    }
+    .marquee {
+        font-size: 3em;
+        padding-top: 10px;
+     } 
+    .typeHead6 {
+        padding-bottom: 150px;
+    }
+    .list-inline img {
+        height:30px;
+    }
+    #projectSkillsSection {
+        padding-bottom: 50px;
+    }
+    #diamonShape {
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #introduceHeading {
+        position: absolute;
+        display: block;
+        z-index: 4;
+        top: 0px;
+        padding-top: 20px;
+        text-shadow: 2px 2px 8px #000000;
+    }
+    #profile {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .breakLineStar {
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        top: -35px;
+    }
+    .linkItemFooter {
+        padding: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .menuItem {
+        font-size: 7em;
+    }
+
     .linkItemFooter {
         width: auto;
     }
@@ -128,9 +379,38 @@
         align-items: center;
         flex-direction: column;
     }
-}
-@media screen and (min-width: 601px) {
 
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        position: relative;
+        align-content: center;
+    }
+
+    #copyright {
+        display: none;
+    }
+
+    #creditsLine {
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        margin-top: 20px;
+    }
+    
+    #copyrightMobile {
+        align-self: center;
+        justify-self: center;
+        font-size: x-small;
+    }
+
+}
+  @media only screen  and (min-width : 1024px) {
+    
     .mobileSectionHeading {
         display: none;
     }
@@ -234,12 +514,21 @@
     .menuItem {
         font-size: 7em;
     }
-  }
 
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    
-}
-  @media only screen  and (min-width : 1080px) {
+    .linkItemFooter {
+        width: auto;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .projectPreviews {
+        margin-bottom: 50px;
+    }
+
     .animatable {
   
         /* initially hide animatable objects */
@@ -346,6 +635,15 @@
     }
     .sectionHeading {
         font-size: 5em;
+    }
+    #copyrightMobile {
+        display: none;
+    }
+    #creditsLine {
+        margin-right: 0;
+        margin-left: auto;
+        width: 250px;
+        text-align: right;
     }
     
   }  
@@ -625,7 +923,8 @@ header {
       width: 350px;
       display: block;
       text-align: center;
-      margin: 0px 30px 80px 30px;
+      margin-left: 30px;
+      margin-right: 30px;
       height: auto;
 }
 
@@ -681,7 +980,18 @@ header {
       /*border: 2px solid yellowgreen;*/
 }
 
-
+#diamonShape2 {
+    height: 30px;
+}
+#diamondDivider{
+    display: inline-flex;
+    justify-self: center;
+    text-align: center;
+    justify-content: center;
+}
+#diamondDivider li {
+    list-style: none;
+}
 
 .viewProjectButton {
       padding: 10px 20px;
@@ -860,12 +1170,7 @@ footer {
     margin-right: auto;
     width: 250px;
 }
-#creditsLine {
-    margin-right: 0;
-    margin-left: auto;
-    width: 250px;
-    text-align: right;
-}
+
 
 #creditsLine, #copyright {
     font-weight: 100;

@@ -1,0 +1,1038 @@
+@media only screen and (max-width: 600px) {
+    @font-face {
+        font-family: 'Migra';
+        src: url('../fonts/Migra-ExtraBold.woff2') format('woff2');
+        font-weight: 900;
+        font-style: normal;
+        letter-spacing: 1px
+     }
+     .menuItem {
+        font-size: 5em;
+    }
+    .mobileSectionHeading {
+        display: block;
+        line-height: 1;
+        letter-spacing: 1px;
+    }
+    .desktopSectionHeading {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        position: relative;
+        align-content: center;
+    }
+    #copyright {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .sectionHeading {
+        font-size: 3em;
+    }
+
+    #lottieHeader {
+        width: 95%; 
+        height: auto;
+    }
+
+    header {
+        height: 60vh;
+        width: 100vw;
+    }
+
+    .rotate {
+        height: 45px;
+        width: 45px;
+    }
+    .marquee {
+        font-size: 1em;
+     } 
+     .list-inline img {
+        height:10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .linkItem a {
+        width: auto;
+        height: 20px;
+        display: inline;
+        padding: 10px;
+        font-size: smaller;
+        text-align: center;
+    }
+    #profile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    #profilePic {
+        display: none;
+    }
+    #lancePortrait {
+        background-image: url("../images/profilePictureLance.jpg");
+        display: block;
+        background-size: cover;
+        height: 380px;
+        width: 380px;
+        border: 1px solid white;
+    }
+    
+    #profileIntro p, #profileIntro h3 {
+        font-size: 1em;
+
+    }
+    .profileContent {
+        display: block;
+        padding: 20px;
+    }
+
+    #diamonShape {
+        height: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #diamonShapeContact {
+        height: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .breakLineStar {
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        top: -30px;
+    }
+    #emailMeButton {
+        width: 200px; 
+        height: 181px;
+    }
+    #contactList {
+        height: 100px;
+    }
+    #creditsLine {
+        display: none;
+    }
+    .linkItemFooter {
+        width: auto;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 601px) {
+
+    .mobileSectionHeading {
+        display: none;
+    }
+    .desktopSectionHeading {
+        display: block;
+        letter-spacing: 1px;
+    }
+
+    #lottieHeader {
+        width: 70%; 
+        height: auto;
+    }
+    header {
+        height: 80vh;
+    }
+    .sectionHeading {
+        font-size: 3.5em;
+    }
+    .linkItemNav a {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .rotate {
+        height: 50px;
+        width: 50px;
+    }
+    #profilePic {
+        height: 550px;
+        width: 550px !important;
+        z-index: 1;
+        position: relative;
+        right: -10px;
+        top: -10px;
+        display: block;
+    }
+    #profilePic {
+        background-image: url(../images/profilePictureLanceD.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: drop-shadow(3px 4px 10px rgb(200, 89, 89));
+    }
+    #lancePortrait {
+        display: none;
+    }
+    
+    #profileIntro {
+        height: 350px;
+        min-width: 450px;
+        position: relative;
+        left: -55px;
+        top: 100px;
+        z-index: 2;
+        backdrop-filter: blur(50px);
+        padding: 20px 40px;
+    }
+    #profileIntro p, #profileIntro h3 {
+        font-size: 1.3em;
+    }
+    .marquee {
+        font-size: 3em;
+        padding-top: 10px;
+     } 
+    .typeHead6 {
+        padding-bottom: 150px;
+    }
+    .list-inline img {
+        height:30px;
+    }
+    #projectSkillsSection {
+        padding-bottom: 50px;
+    }
+    #diamonShape {
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #introduceHeading {
+        position: absolute;
+        display: block;
+        z-index: 4;
+        top: 0px;
+        padding-top: 20px;
+        text-shadow: 2px 2px 8px #000000;
+    }
+    #profile {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .breakLineStar {
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        top: -35px;
+    }
+    .linkItemFooter {
+        padding: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .menuItem {
+        font-size: 7em;
+    }
+  }
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    
+}
+  @media only screen  and (min-width : 1080px) {
+    .animatable {
+  
+        /* initially hide animatable objects */
+        visibility: hidden;
+        
+        /* initially pause animatable objects their animations */
+        -webkit-animation-play-state: paused;   
+        -moz-animation-play-state: paused;     
+        -ms-animation-play-state: paused;
+        -o-animation-play-state: paused;   
+        animation-play-state: paused; 
+      }
+      
+      /* show objects being animated */
+      .animated {
+        visibility: visible;
+        
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+      
+        -webkit-animation-play-state: running;
+        -moz-animation-play-state: running;
+        -ms-animation-play-state: running;
+        -o-animation-play-state: running;
+        animation-play-state: running;
+      }
+      
+      
+      @-webkit-keyframes fadeInUp {
+          0% {
+              opacity: 0;
+              -webkit-transform: translateY(20px);
+          }	100% {
+              opacity: 1;
+              -webkit-transform: translateY(0);
+          }
+      }
+      
+      @-moz-keyframes fadeInUp {
+          0% {
+              opacity: 0;
+              -moz-transform: translateY(20px);
+          }
+      
+          100% {
+              opacity: 1;
+              -moz-transform: translateY(0);
+          }
+      }
+      
+      @-o-keyframes fadeInUp {
+          0% {
+              opacity: 0;
+              -o-transform: translateY(20px);
+          }
+      
+          100% {
+              opacity: 1;
+              -o-transform: translateY(0);
+          }
+      }
+      
+      @keyframes fadeInUp {
+          0% {
+              opacity: 0;
+              transform: translateY(20px);
+          }
+      
+          100% {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+      .animated.fadeInUp {
+          -webkit-animation-name: fadeInUp;
+          -moz-animation-name: fadeInUp;
+          -o-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+      }
+      #emailMeButton {
+            width: 500px; 
+            height: auto;
+            cursor: url('../images/pressButtonPointer60.png'), pointer;
+      }
+      .linkItemFooter {
+        padding: 5px 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .menuItem {
+        font-size: 10em;
+    }
+    #profileIntro {
+        margin-top: 20px;
+    }
+    .sectionHeading {
+        font-size: 5em;
+    }
+    
+  }  
+  @media only screen  and (min-width : 1224px) {
+
+  }
+
+
+
+/*
+Font: 		Amient
+Style: 		Regular
+URL: 		https://www.youworkforthem.com/font/T14212/amient
+Foundry: 	Piotr Lapa
+Foundry: 	https://www.youworkforthem.com/designer/1166/piotr-lapa
+Copyright:	Copyright © 2021 by Piotr _apa. All rights reserved.
+Version: 	17
+Created:	June 05, 2021
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'Amient-Regular';
+	src: url('../fonts/amient-regular.eot');
+	src: url('../fonts/amient-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/amient-regular.woff2') format('woff2'),
+	     url('../fonts/amient-regular.woff') format('woff'),
+	     url('../fonts/amient-regular.ttf') format('truetype'),
+	     url('../fonts/amient-regular.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Migra';
+    src: url('../fonts/Migra-ExtraBold.woff2') format("woff2"),
+    url('../fonts/Migra-Extrabold.ttf') format("truetype"),
+    url('../fonts/Migra-Extrabold.otf') format("opentype"),
+    url("../fonts/Migra-Extrabold.woff") format("woff"),
+    url("../fonts/Migra-Extrabold.eot") format("eot");
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px
+}
+ /*@font-face {
+    font-family: 'Migra';
+    src: url('../fonts/Migra-ExtraLight.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+ }
+ @font-face {
+    font-family: 'Migra';
+    src: url('../fonts/Migra-Regular.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+ }*/
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../fonts/NeueMontreal-Light.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 1px
+}
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../fonts/NeueMontreal-Bold.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../fonts/NeueMontreal-Regular.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px
+}
+body {
+    margin: 0;
+    background-image: url(../images/backgroundNoisePattern.jpeg);
+    background-repeat: repeat;
+    background-color: black;
+    box-sizing: content-box;
+    color: white;  
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    letter-spacing: 1px
+}
+
+.headerNav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 5px;
+     box-sizing: content-box;
+     
+}
+
+header {
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    flex-direction: column;
+}
+
+#lottieHeader {
+    display: block;
+    z-index: 1;
+}
+
+
+#logoContainer {
+    height: 50px;
+    width: 100px;
+    /*border: 1px solid saddlebrown;*/
+    padding: 20px;
+}
+
+/*#headerLinks {
+    display: inline;
+    height: auto;
+    display: flex;
+    align-items: center;
+}*/
+
+.linkItem a:hover {
+    font-family: 'NeueMontreal';
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    text-decoration: underline white 1px;
+}
+
+.linkItem a {
+     width: 100px;
+     height: 20px;
+     display: inline;
+     font-family: 'NeueMontreal';
+     font-weight: 500;
+     text-align: center;
+     justify-content: center;
+     color: white;
+     text-decoration: none;
+     letter-spacing: 1px;
+     /* border: 1px solid yellowgreen; */
+}
+
+.rotate {
+    animation: rotation 10s infinite linear;
+    background-color: #000000;
+    border-radius: 30px;
+}
+.rotatingIcon {
+    align-items: flex-end;
+    display: flex;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.marquee {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: content-box;
+    position: relative;
+    font-family: 'Migra';
+    font-weight: 900;
+    position: relative;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    background-color: #000000;
+} 
+
+.marquee::before {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 60px;
+    content: "";
+    z-index: 1;
+    left: 0;
+}
+
+.marquee::after {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 60px;
+    content: "";
+    z-index: 1;
+    right: 0;
+    /*background: linear-gradient(to left, black 3%, transparent 100%);*/
+}
+  
+  
+.marquee__content {
+    width: 300% !important;
+    display: flex;
+    line-height: 60px;
+    animation: marquee 50s linear infinite forwards;
+    overflow: hidden;
+}
+
+.marquee__content2 {
+    width: 300% !important;
+    display: flex;
+    line-height: 60px;
+    animation: marquee 50s linear infinite forwards;
+    overflow: hidden;
+}
+  
+.list-inline {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    /* reset list */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-66.6%); }
+}
+
+.list-inline li {
+    font-family: 'Migra';
+    font-weight: 900;
+    color: white;
+    letter-spacing: 3px;
+}
+  
+#projectSkillsSection {
+      font-family: 'Migra';
+      display: block;
+      text-align: center;
+      align-content: center;
+}
+
+#projectSectionContainer {
+      padding-top: 10px;
+      padding-bottom: 80px;
+}
+
+#skillsSectionContainer {
+      padding-bottom: 50px;
+      margin-top: -30px;
+}
+
+#projectSection .sectionHeading {
+      display: block;
+      flex-basis: 100%;
+}
+
+.projectPreviews {
+      border: 1px solid white;
+      width: 350px;
+      display: block;
+      text-align: center;
+      margin: 0px 30px 80px 30px;
+      height: auto;
+}
+
+.projectDesc h3, .projectTitle, .projectDescription  {
+    border-top: 1px solid white;
+    margin: 0;
+    padding: 15px;
+}
+.projectDesc h3 {
+    background-color: transparent;
+}
+
+.projectImage {
+    background-size: cover;
+    background-color: white;
+    width: calc(100% - 30px);
+    margin: 15px;
+    height: 250px;
+}
+
+#deseImage {
+    background-image: url(../images/DESE-project-image_2.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#whynotImage {
+    background-image: url(../images/whynot-project-image_2.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.projectDescription {
+    font-family: 'NeueMontreal';
+    text-align: left;
+}
+
+.projectDesc a, #profileIntro a  {
+      text-decoration: none;
+      color: white;
+      height: auto;
+      font-family: 'Migra';
+}
+
+.sectionHeading {
+      font-family: 'Migra';
+      font-weight: 900;
+      color: white;
+      letter-spacing: 2px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      /*border: 2px solid yellowgreen;*/
+}
+
+
+
+.viewProjectButton {
+      padding: 10px 20px;
+      width: 150px;
+      background-image: linear-gradient(to bottom right, #cb186000, #d35b2b00);
+      display: inline-block;
+      font-family: 'NeueMontreal';
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 10px;
+      cursor: pointer;
+      border-image: linear-gradient(to bottom right, #cb1860, #d35b2b);
+      color: white;
+      border-width: 1px;
+      border-style: solid;
+      border-image-slice: 1;
+      border-radius: 0px;
+}
+
+.viewProjectButton:hover {
+    font-family: 'NeueMontreal';
+    font-weight: 900;
+    background-image: linear-gradient(to bottom right, #cb1860, #d35b2b);
+}
+
+.viewProjectButton:focus {
+    /*background-image: linear-gradient(to bottom right, #d35b2b, #cb1860);
+    border: 1px solid white;*/
+    font-family: 'NeueMontreal';
+    font-weight: 900;
+}
+
+.viewProjectButton:active {
+    /*background-image: linear-gradient(to bottom right, #00000000, #00000000);
+    border: 1px solid white;*/
+    font-family: 'NeueMontreal';
+    font-weight: 900;
+}
+
+.flexContainer {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      /*border: 2px solid yellowgreen;*/
+}
+
+
+
+#viewAll {
+      display: block;
+}
+
+.skillContainer {
+      width: 300px;
+      min-width: 300px;
+      display: block;
+      padding: 0px;
+      justify-content: center;
+      /*border: 1px solid salmon;*/
+      box-sizing: content-box;
+      margin: 0 30px 30px 30px;
+}
+
+.wrapper {
+      border: 0px;
+      letter-spacing: 1px;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      border-bottom: 1px solid white;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      box-sizing: content-box;
+      width: 300px;
+}
+
+.wrapper h3 {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.skillTag {
+      font-family: "NeueMontreal";
+      border: 1px solid white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 300px;
+      letter-spacing: 1px;
+}
+
+.wrapperTags {
+    display: grid;
+    gap: 5px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 280px;
+    padding: 25px 10px;
+}
+
+#designWrapper {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#toolsWrapper {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.uxTag1a { 
+    grid-column: 1 / span 6;
+    grid-row: 1;
+}
+
+.uxTag2a {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+.uxTag3a { 
+    grid-column: 4 / span 3;
+    grid-row: 2;
+}
+
+.uxTag4a {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.uxTag5a { 
+    grid-column: 3 / span 2;
+    grid-row: 3;
+}
+
+.uxTag6a {
+    grid-column: 5 / span 2;
+    grid-row: 3;
+}
+
+.skillsImage {
+    height: 200px;
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+#doubleDiamondShape, #diamondDesign, #diamondToolbelt {
+    width: 200px;
+    margin: auto;
+}
+
+footer {
+    font-family: 'NeueMontreal';
+    padding: 30px 20px 20px 20px;
+    color: white;
+    display: flex;
+    box-sizing: content-box;
+    /* justify-content: space-between; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #000000);
+}
+
+#footerLinks {
+    display: inline;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#copyright {
+    margin-left: 0;
+    margin-right: auto;
+    width: 250px;
+}
+#creditsLine {
+    margin-right: 0;
+    margin-left: auto;
+    width: 250px;
+    text-align: right;
+}
+
+#creditsLine, #copyright {
+    font-weight: 100;
+    font-size: .8em;
+    height: 30px;
+    position: relative;
+    bottom: 0px;
+}
+
+#aboutMe {
+    text-align: center;
+    color: white;
+    font-family: 'NeueMontreal';
+    display: block;
+    padding-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+#profileSection {
+    display: absolute;
+    /*border: 1px solid yellow;*/
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.profileContent {
+    display: flex;
+    align-items: center;
+}
+
+#profileIntro {
+    text-align: left;
+    background-color: #000000;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 3px 4px 65px 10px rgba(0, 0, 0, 0.54);
+    border: 1px solid white;
+}
+#contactMe {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+}
+
+#contactMe .sectionHeading {
+    display: block;
+    flex-basis: 100%;
+}
+#contactMeContainer {
+        font-family: 'Migra';
+        display: block;
+        text-align: center;
+        align-content: center;
+        padding-bottom: 50px;
+        margin-top: -30px;
+}
+#diamonShapeContact {
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#contactList {
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotateDiamond {
+    animation: rotation2 5s infinite linear;
+
+}
+.rotatingDiamond {
+    align-items: flex-end;
+    display: flex;
+}
+
+@keyframes rotation2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.hover-1 {
+    background: linear-gradient(to bottom right,#cb1860, #d35b2b) var(--p,0)/var(--p,0) no-repeat;
+    transition: .4s,background-position 0s;
+  }
+  .hover-1:hover {
+    --p: 100%;
+    color: #fff;
+  }
+
+  #Layer_1 {
+    --p: 100%;
+    color: #fff;
+    cursor: pointer;
+  }
+ 
+
+.toggle {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    cursor: pointer;
+    border-image: linear-gradient(to bottom right, #cb1860, #d35b2b);
+    border-width: 1px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-radius: 0px;
+}
+
+.toggle a {
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #cb1860;
+
+}
+#navMenuBars {
+    color: white;
+    background-color: #000000;
+    padding:10px;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    z-index: 10;
+    transition: 0.5s;
+}
+.navMenu {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.navMenuListItem {
+    list-style: none;
+}
+
+.menuItem {
+    padding: 10px;
+    display: inline-block;
+    font-family: 'Migra';
+    text-decoration: none;
+    color: #262626;
+    /*border: 1px solid yellowgreen;*/
+}
+
+.menu.active{
+    left: 0;
+    overflow: auto;
+    touch-action: none;
+}

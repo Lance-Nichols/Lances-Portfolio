@@ -136,6 +136,9 @@
         align-items: center;
         flex-direction: column;
     }
+    .mobileOnlyBR {
+        display: block;
+    }
 
 }
 @media screen and (min-width: 601px) and (max-device-width : 768px) {
@@ -257,6 +260,9 @@
     }
     #creditsLine {
         margin-top: 20px;
+    }
+    .mobileOnlyBR {
+        display: block;
     }
   }
 
@@ -406,6 +412,9 @@
         align-self: center;
         justify-self: center;
         font-size: x-small;
+    }
+    .mobileOnlyBR {
+        display: none;
     }
 
 }
@@ -644,6 +653,9 @@
         margin-left: auto;
         width: 250px;
         text-align: right;
+    }
+    .mobileOnlyBR {
+        display: none;
     }
     
   }  
@@ -1342,4 +1354,12 @@ footer {
     left: 0;
     overflow: auto;
     touch-action: none;
+}
+
+#contactHeading {
+    margin-bottom: 0;
+}
+#contactSubHeading {
+    letter-spacing: 2px;
+    margin-bottom: 50px;
 }

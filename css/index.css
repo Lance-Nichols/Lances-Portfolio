@@ -729,7 +729,7 @@ License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
 }
 body {
     margin: 0;
-    background-image: url(../images/backgroundNoisePattern.jpeg);
+    background-image: url(../images/backgroundNoisePatternL.jpg);
     background-repeat: repeat;
     background-color: black;
     box-sizing: content-box;

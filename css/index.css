@@ -776,12 +776,19 @@ header {
     z-index: 1;
 }
 
-
+#logoContainerMenu {
+    height: 50px;
+}
 #logoContainer {
     height: 50px;
     width: 100px;
     /*border: 1px solid saddlebrown;*/
     padding: 20px;
+}
+
+#lanceLogoMono{
+    color: #262626;
+    height: 30px;
 }
 
 /*#headerLinks {
@@ -1327,6 +1334,9 @@ footer {
     background-repeat: repeat;
     z-index: 10;
     transition: 0.5s;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 .navMenu {
     margin: 0;
@@ -1354,6 +1364,38 @@ footer {
     left: 0;
     overflow: auto;
     touch-action: none;
+}
+
+#menuItemContainer{
+    width: 100vw;
+    height: 85vh;
+    align-self: center;
+    justify-self: center;
+    display: inline-flex;
+}
+
+#menuLeft, #menuRight {
+    width: 7vw;
+    height: 85vh;
+    text-align: center;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    color: #000;
+    font-family: 'Migra';
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+#menuRight {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.menuLabelIcon {
+    margin: 15px 0;
+    height: 15px;
 }
 
 #contactHeading {

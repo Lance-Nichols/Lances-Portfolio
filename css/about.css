@@ -1294,8 +1294,9 @@ footer {
     --p: 100%;
     color: #fff;
     cursor: pointer;
-}
+  }
  
+
 .toggle {
     position: fixed;
     top: 40px;

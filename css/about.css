@@ -1412,10 +1412,10 @@ footer {
     position: fixed;
     bottom: 0;
     margin-bottom: 0;
-    width: 100%;
+    width: 97vw;
 }
 #aboutMain {
-    height: 80vh;
+    height: 60vh;
 }
 #aboutMain h1 {
     font-family: 'Migra';
@@ -1423,6 +1423,6 @@ footer {
     font-size: 10em;
     margin: 0;
     line-height: 0.85;
-    height: 75vh;
+    height: 55vh;
     padding: 10vh;
 }

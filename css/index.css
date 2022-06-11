@@ -459,7 +459,8 @@
     #moltenPink {
         width: 100vw;
         height: auto;
-        top: 30%;
+        top: 0;
+        overflow: hidden;
     }
     .sectionHeading {
         font-size: 3.5em;
@@ -772,6 +773,7 @@ body {
     background-color: black;
     box-sizing: content-box;
     color: white;  
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p {

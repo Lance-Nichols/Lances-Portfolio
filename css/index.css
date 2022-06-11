@@ -18,6 +18,12 @@
         display: none;
     }
 
+    #moltenPink {
+        width: 100vw;
+        height: auto;
+        top: 30%;
+    }
+
     footer {
         display: flex;
         flex-direction: column-reverse;
@@ -48,6 +54,7 @@
     header {
         height: 60vh;
         width: 100vw;
+        overflow: hidden;
     }
 
     .rotate {
@@ -159,6 +166,12 @@
     }
     header {
         height: 80vh;
+    }
+
+    #moltenPink {
+        width: 100vw;
+        height: auto;
+        top: 40%;
     }
     .sectionHeading {
         font-size: 3.5em;
@@ -283,6 +296,12 @@
     }
     header {
         height: 80vh;
+    }
+
+    #moltenPink {
+        width: 100vw;
+        height: auto;
+        top: 30%;
     }
     .sectionHeading {
         font-size: 3.5em;
@@ -435,6 +454,12 @@
     }
     header {
         height: 80vh;
+    }
+
+    #moltenPink {
+        width: 100vw;
+        height: auto;
+        top: 30%;
     }
     .sectionHeading {
         font-size: 3.5em;
@@ -772,17 +797,24 @@ header {
 }
 
 #moltenPink {
+    z-index: -20;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+}
+
+#moltenPink img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*
     background-image: url(../images/moltenPinkCrop.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: -20;
-    width: 100vw;
-    height: 120vh;
-    position: absolute;
-    top: 30%;
-    display: flex;
-}
+*/
 
 #lottieHeader {
     display: block;

@@ -759,7 +759,6 @@ h1, h2, h3, h4, h5, h6, p {
      align-items: center;
      padding: 5px;
      box-sizing: content-box;
-     
 }
 
 header {
@@ -772,9 +771,22 @@ header {
     flex-direction: column;
 }
 
+#moltenPink {
+    background-image: url(../images/moltenPinkCrop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -20;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 40%;
+    display: flex;
+}
+
 #lottieHeader {
     display: block;
-    z-index: 1;
+    z-index: 3;
 }
 
 #logoContainerMenu {

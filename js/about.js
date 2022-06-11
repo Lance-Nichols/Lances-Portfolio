@@ -17,3 +17,13 @@ $(document).ready(function(){
   $(".toggle").click(function(){
     $(".toggle").addClass("active");
   });
+
+  LottieInteractivity.create({
+    player:'#emailMeButton',
+    mode:"cursor",
+    actions: [
+        {
+            type: "toggle"
+        }
+  ]
+  });

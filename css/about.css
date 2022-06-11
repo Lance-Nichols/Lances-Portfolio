@@ -1267,6 +1267,7 @@ footer {
     animation: rotation2 5s infinite linear;
 
 }
+
 .rotatingDiamond {
     align-items: flex-end;
     display: flex;
@@ -1285,6 +1286,7 @@ footer {
     background: linear-gradient(to bottom right,#cb1860, #d35b2b) var(--p,0)/var(--p,0) no-repeat;
     transition: .4s,background-position 0s;
   }
+
   .hover-1:hover {
     --p: 100%;
     color: #fff;
@@ -1296,7 +1298,6 @@ footer {
     cursor: pointer;
   }
  
-
 .toggle {
     position: fixed;
     top: 40px;
@@ -1317,11 +1318,13 @@ footer {
     color: #cb1860;
 
 }
+
 #navMenuBars {
     color: white;
     background-color: #000000;
     padding:10px;
 }
+
 #sideMenu {
     margin: 0;
     padding: 0;
@@ -1339,6 +1342,7 @@ footer {
     text-align: center;
     justify-content: center;
 }
+
 #navMenu {
     margin: 0;
     padding: 0;
@@ -1348,6 +1352,7 @@ footer {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .navMenuListItem {
     list-style: none;
 }
@@ -1389,6 +1394,7 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
 #menuRight {
     margin-right: 0;
     margin-left: auto;
@@ -1402,22 +1408,35 @@ footer {
 #contactHeading {
     margin-bottom: 0;
 }
+
 #contactSubHeading {
     letter-spacing: 2px;
     margin-bottom: 50px;
 }
 
 /*ABOUT PAGE*/
+
 #footerAbout {
-    position: fixed;
+    position: relative;
     bottom: 0;
     margin-bottom: 0;
     width: 97vw;
 }
 #aboutMain {
-    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#aboutMain h1 {
+
+.aboutSubHeading {
+    font-family: 'Migra';
+    letter-spacing: 1px;
+    font-size: 3em;
+    margin: 8px;
+}
+
+#comingSoonTitle {
     font-family: 'Migra';
     text-align: center;
     font-size: 10em;
@@ -1426,3 +1445,29 @@ footer {
     height: 55vh;
     padding: 10vh;
 }
+
+.breakLineAbout {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.halfHalf {
+    max-width: 500px;
+}
+.halfHalf p {
+    font-family: 'NeueMontreal';
+}
+
+#bioStudies, #bioExperience, #bioLearning {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.halfHalfLeft {
+    min-width: 300px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+/*PORTFOLIO PAGE*/

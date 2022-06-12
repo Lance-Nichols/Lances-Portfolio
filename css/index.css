@@ -98,7 +98,10 @@
         width: 380px;
         border: 1px solid white;
     }
-    
+    #profileIntro{
+        background-color: black;
+    }
+
     #profileIntro p, #profileIntro h3 {
         font-size: 1em;
 
@@ -208,6 +211,11 @@
     }
     #profileIntro p, #profileIntro h3 {
         font-size: 1.3em;
+    }
+
+    #profileIntro {
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 3px 4px 65px 10px rgba(0, 0, 0, 0.54);
     }
     .marquee {
         font-size: 2em;
@@ -347,7 +355,10 @@
         z-index: 2;
         backdrop-filter: blur(50px);
         padding: 20px 40px;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 3px 4px 65px 10px rgba(0, 0, 0, 0.54);
     }
+
     #profileIntro p, #profileIntro h3 {
         font-size: 1.3em;
     }
@@ -502,6 +513,8 @@
         z-index: 2;
         backdrop-filter: blur(50px);
         padding: 20px 40px;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 3px 4px 65px 10px rgba(0, 0, 0, 0.54);
     }
     #profileIntro p, #profileIntro h3 {
         font-size: 1.3em;
@@ -1289,9 +1302,6 @@ footer {
 
 #profileIntro {
     text-align: left;
-    background-color: #000000;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 3px 4px 65px 10px rgba(0, 0, 0, 0.54);
     border: 1px solid white;
 }
 #contactMe {

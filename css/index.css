@@ -787,13 +787,14 @@ body {
     background-size: 600px;
     margin: 0;
     box-sizing: content-box;
-    color: black;  
+    color: white;  
     overflow-x: hidden;
 }
 
 html {
     background-image: url(../images/backgroundNoisePatternL.jpg);
     background-repeat: repeat;
+    background-color: black;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -1451,7 +1452,6 @@ footer {
 .strikeThrough {
     text-decoration: 10px line-through;
     text-decoration-line: underline;
-    textdec
 }
 
 #moltenMonoIMG {

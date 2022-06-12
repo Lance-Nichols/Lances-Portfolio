@@ -1427,7 +1427,6 @@ footer {
 }
 
 .menuItem {
-    padding: 10px;
     display: inline-block;
     font-family: 'Migra';
     text-decoration: none;
@@ -1447,6 +1446,27 @@ footer {
     align-self: center;
     justify-self: center;
     display: inline-flex;
+}
+
+.strikeThrough {
+    text-decoration: 10px line-through;
+    text-decoration-line: underline;
+    textdec
+}
+
+#moltenMonoIMG {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -30;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+}
+#moltenMonoIMG img {
+    width: auto;
+    height: 100vh;
 }
 
 #menuLeft, #menuRight {

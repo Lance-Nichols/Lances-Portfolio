@@ -1357,8 +1357,27 @@ footer {
     list-style: none;
 }
 
+#moltenMonoIMG {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -30;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+}
+#moltenMonoIMG img {
+    width: auto;
+    height: 100vh;
+}
+
+.strikeThrough {
+    text-decoration: 10px line-through;
+    text-decoration-line: underline;
+}
+
 .menuItem {
-    padding: 10px;
     display: inline-block;
     font-family: 'Migra';
     text-decoration: none;

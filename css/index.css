@@ -19,10 +19,9 @@
     }
 
     #moltenPink {
-        width: 160vw;
+        width: 100vw;
         height: auto;
         top: 30%;
-        overflow-x: hidden;
     }
 
     footer {

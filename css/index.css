@@ -871,7 +871,6 @@ header {
     font-weight: 500;
     cursor: pointer;
     color: white;
-    text-decoration: underline white 1px;
 }
 
 .linkItem a {

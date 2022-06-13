@@ -252,6 +252,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
     }
     #copyright {
         display: none;
@@ -380,13 +381,6 @@
     .linkItemFooter {
         width: auto;
     }
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
 
     footer {
         display: flex;
@@ -747,6 +741,7 @@ body {
     background-color: black;
     box-sizing: content-box;
     color: white;  
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -804,7 +799,6 @@ header {
     font-weight: 500;
     cursor: pointer;
     color: white;
-    text-decoration: underline white 1px;
 }
 
 .linkItem a {
@@ -1439,7 +1433,7 @@ footer {
     position: relative;
     bottom: 0;
     margin-bottom: 0;
-    width: 97vw;
+    width: calc(100% - 40px);
 }
 #aboutMain {
     display: flex;
@@ -1495,5 +1489,6 @@ footer {
 .halfHalfRight {
     padding: 20px;
 }
+
 
 /*PORTFOLIO PAGE*/

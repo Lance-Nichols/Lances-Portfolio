@@ -48,11 +48,38 @@
                 </div>
             </div>
         </nav><!-- HEADER NAV END-->
+        <header>
+            <h1>Check out <br>what I do!</h1>
+        </header>
         <main id="portfolioMain">
-            <h1>Under<br>Contstruction</h1>
+            <section id="portfolioSection">
+                <div id="portfolioContent">
+                    <h2></h2>
+                    <div class="tab">
+                        <button id="loadOpen" class="tablinks" onclick="openPortfolio(event, 'UxUi')"><h3>UX/UI</h3></button>
+                        <button class="tablinks" onclick="openPortfolio(event, 'GraphicDigital')"><h3>Graphic & Digital</h3></button>
+                        <button id="lastButton2" class="tablinks" onclick="openPortfolio(event, 'PersonalProjects')"><h3>Personal Projects</h3></button>
+                    </div>     
+                    <div id="UxUi" class="tabcontent">
+                        <div class="tabContentContainer">
+                            
+                        </div>
+                    </div>
+                    <div id="GraphicDigital" class="tabcontent">
+                        <div class="tabContentContainer">
+
+                        </div>
+                    </div>
+                    <div id="PersonalProjects" class="tabcontent">
+                        <div class="tabContentContainer">
+
+                        </div>
+                    </div>
+                </div>       
+            </section>
         </main>
     </body>
-    <footer id="footerAbout"><!-- FOOTER START-->
+    <footer id="footerContact"><!-- FOOTER START-->
         <div id="copyright"><p>&copy; Copyright 2022, Lance Nichols</p></div>
         <div id="footerLinks">
             <div class="linkItem linkItemFooter hover-1"><a href="https://drive.google.com/file/d/1i3C_wdH4WYnjlpy9BPc0mhlITZdGnL9X/view?usp=sharing" target="_blank">View CV</a></div>
@@ -63,6 +90,6 @@
         <div id="copyrightMobile"><p>&copy; Copyright 2022, Lance Nichols</p></div>
     </footer><!-- FOOTER END-->
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-    <script src="js/about.js" async defer></script>
+    <script src="js/folio.js" async defer></script>
 </body>
 </html>

@@ -48,11 +48,49 @@
                 </div>
             </div>
         </nav><!-- HEADER NAV END-->
+        <header id="bioIntro">
+            <div id="aboutPic"></div>
+            <div id="aboutGreeting"><h1>Hey there,<br>I'm Lance</h1></div>
+        </header>
+        <hr class="breakLineAbout">
+        <section id="aboutTLDR">
+            <div id="tldrSection">
+                <h2>ABOUT:TLDR</h2>
+                <div class="tab">
+                    <button id="defaultOpen" class="tablinks" onclick="openAbout(event, 'Studies')"><h3>Studies</h3></button>
+                    <button class="tablinks" onclick="openAbout(event, 'WorkExperience')"><h3>Work Experience</h3></button>
+                    <button id="lastButton" class="tablinks" onclick="openAbout(event, 'ContinuedLearning')"><h3>Continued Learning</h3></button>
+                </div>     
+                <div id="Studies" class="tabcontent">
+                    <div class="tabContentContainer">
+                        <p>Fine Art & Contemporary Craft <br>
+                            Australian Tattoo Academy <br>
+                            CATC Design School Diploma of Graphic Design <br>
+                            First freelance client: Australian Sports Museum <br>
+                            Billy Blue College of Design - Communication Design Bachelors Degree</p>
+                        </div>
+                    </div>
+                    <div id="WorkExperience" class="tabcontent">
+                        <div class="tabContentContainer">
+                            <p><strong>Digital designer</strong><br>Eight Clients Social Media Marketing Agency</p>
+                            <p><strong>Packaging, POS & Print Designer</strong><br>United Petroleum Group - Pie Face</p>
+                            <p><strong>Digital Designer</strong> <br>Petcover Group</p>
+                        </div>
+                    </div>
+                    <div id="ContinuedLearning" class="tabcontent">
+                        <div class="tabContentContainer">
+                            <p>Always learning, always creating 
+                                <br>Furniture restoration and reupholstering 
+                                <br>Made a cool vintage smoking jacket 
+                                <br>Creating art for my home 
+                                <br>Skillshare courses: 3D Modelling and texturing 
+                                <br>Monash University: UX/UI Bootcamp</p>
+                        </div>
+                    </div>
+            </div>       
+        </section>
+        <hr class="breakLineAbout">
         <main id="aboutMain">
-            <section id="bioIntro">
-                <h1 id="comingSoonTitle">Under<br>Construction</h1>
-            </section>
-            <hr class="breakLineAbout">
             <section id="bioStudies">
                 <div class="halfHalf halfHalfLeft">
                     <h2 class="aboutSubHeading">
@@ -75,7 +113,7 @@
                 <div class="halfHalf halfHalfRight">
                     <p>Soon after graduation I restarted my freelance career with Eight Clients social media marketing agency as my leading account, where I had the opportunity to work with and create digital work for a number of large companies and businesses.</p>
                     <p>I took on a second leading account with United Petroleum Group which had just acquired Pie Face Australia. After a few months, I was hired as lead designer for Pie Face which saw me take creative direction across packaging, print and POS for the brand while at the same time creating United Petroleum product branding and packaging.</p>
-                    <p>During the pandemic I moved to a new opportunity with Petcover Group as a digital designer to assist in the launch of Petcover in Austria, New Zealand, France and Ireland while rejuvenating existing brands British Pet Insurance, Petcover AU and Petplan AU + NZ.</p>
+                    <p>During the pandemic I started a new opportunity with Petcover Group as a digital designer to assist in the launch of Petcover in Austria, New Zealand, France and Ireland while rejuvenating existing brands British Pet Insurance, Petcover AU and Petplan AU + NZ.</p>
                 </div>
             </section>
             <section id="bioLearning">
@@ -89,8 +127,9 @@
                     <p>Most recently I’ve decided to dive further into digital design and refresh my skills in UX/UI and front end coding at Monash University’s UX/UI 6 Month Bootcamp.</p>
                 </div>
             </section>
-            <hr class="breakLineAbout">
-            <section id="contactMeContainer">
+        </main>
+        <hr class="breakLineAbout">
+        <section id="contactMeContainer">
                 <h1 id="contactHeading" class="sectionHeading desktopSectionHeading">Let's work together</h1>
                 <h1 id="contactHeading" class="sectionHeading mobileSectionHeading">Let's work<br>together</h1>     
                 <h2 id="contactSubHeading">(Available for freelance,<br class="mobileOnlyBR"> but don't forget to paylance.)<br></h2>   
@@ -123,8 +162,7 @@
                         </div>
                     </div>
                 </div>    
-            </section>   
-        </main>
+        </section> 
     </body>
     <footer id="footerAbout"><!-- FOOTER START-->
         <div id="copyright"><p>&copy; Copyright 2022, Lance Nichols</p></div>

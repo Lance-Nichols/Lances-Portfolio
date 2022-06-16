@@ -141,6 +141,17 @@
         display: block;
     }
 
+    .halfHalfLeft {
+        text-align: left;
+        min-width: 300px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .halfHalfRight {
+        padding: 0 20px 40px 20px;
+    }
+
 }
 @media screen and (min-width: 601px) and (max-width : 768px) {
 
@@ -265,6 +276,17 @@
     }
     .mobileOnlyBR {
         display: block;
+    }
+
+    .halfHalfLeft {
+        text-align: left;
+        min-width: 300px;
+        width: 500px;
+        padding: 0 20px;
+    }
+
+    .halfHalfRight {
+        padding: 0 20px 40px 20px;
     }
   }
 
@@ -411,6 +433,7 @@
     .mobileOnlyBR {
         display: none;
     }
+    
 
 }
   @media only screen  and (min-width : 1024px) {
@@ -428,7 +451,7 @@
         height: auto;
     }
     header {
-        height: 80vh;
+        height: 70vh;
     }
     .sectionHeading {
         font-size: 3.5em;
@@ -652,6 +675,15 @@
     .mobileOnlyBR {
         display: none;
     }
+
+    .halfHalfLeft {
+        text-align: right;
+        padding: 10px 20px;
+    }
+
+    .halfHalfRight {
+        padding: 0 20px 40px 20px;
+    }
     
   }  
   @media only screen  and (min-width : 1224px) {
@@ -813,11 +845,6 @@ header {
      text-decoration: none;
      letter-spacing: 1px;
      /* border: 1px solid yellowgreen; */
-}
-
-.strikeThrough1, .strikeThrough2, .strikeThrough3, .strikeThrough4 {
-    text-decoration: 10px line-through;
-    text-decoration-line: underline;
 }
 
 .rotate {
@@ -1246,7 +1273,7 @@ footer {
         display: block;
         text-align: center;
         align-content: center;
-        padding-bottom: 50px;
+        padding: 50px 0;
         margin-top: -30px;
 }
 #diamonShapeContact {
@@ -1429,25 +1456,118 @@ footer {
 
 /*ABOUT PAGE*/
 
+h1, h2, h3 {
+    font-family: 'Migra';
+}
+
+#aboutMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+#aboutTLDR {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#tldrSection {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70vw;
+    min-width: 800px;
+}
+
+#tldrSection h3 {
+    font-size: 1.6em;
+    margin: 0;
+}
+
+#tldrSection h2 {
+    font-size: 4em;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+#tldrSection p {
+   font-family: 'NeueMontreal-Regular'; 
+   font-size: 1.2em;
+   line-height: 1.8;
+   margin: 0 0 10px 0;
+}
+
+.tabContentContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 300px;
+    flex-direction: column;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid white;
+  }
+
+  #tldrSection div {
+    text-align: center;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border-style: none;
+    border-left: 1px solid white;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: white;
+  }
+  
+  #lastButton, #lastButton2 {
+    border-right: 1px solid white;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #cb1860;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #000;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+
+
 #footerAbout {
     position: relative;
     bottom: 0;
     margin-bottom: 0;
     width: calc(100% - 40px);
 }
-#aboutMain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .aboutSubHeading {
     font-family: 'Migra';
     letter-spacing: 1px;
     font-size: 3em;
-    margin: 8px 8px 0px 8px;
-
+    margin: 0;
 }
 
 #comingSoonTitle {
@@ -1481,14 +1601,33 @@ footer {
 
 .halfHalfLeft {
     min-width: 300px;
-    width: auto;
-    text-align: right;
-    padding: 20px;
 }
 
-.halfHalfRight {
-    padding: 20px;
+/*CONTACT PAGE*/
+
+#footerContact {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 40px);
 }
 
 
 /*PORTFOLIO PAGE*/
+
+#portfolioMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#portfolioSection {
+    width: 70vw;
+}
+
+#footerContact {
+    position: relative;
+    bottom: 0;
+    width: calc(100% - 40px);
+}

@@ -1448,11 +1448,6 @@ footer {
     display: inline-flex;
 }
 
-.strikeThrough {
-    text-decoration: 10px line-through;
-    text-decoration-line: underline;
-}
-
 #moltenMonoIMG {
     position: absolute;
     width: 100vw;
@@ -1519,3 +1514,4 @@ footer {
     height: 75vh;
     padding: 10vh;
 }
+

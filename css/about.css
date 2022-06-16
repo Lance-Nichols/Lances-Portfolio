@@ -1640,3 +1640,12 @@ h1, h2, h3 {
     margin: 20px 40px;
     width: auto;
 }
+
+.tabContentContainerFolio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 300px;
+    flex-direction: column;
+    padding: 80px;
+}

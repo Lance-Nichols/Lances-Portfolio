@@ -1481,12 +1481,9 @@ h1, h2, h3 {
     justify-content: center;
     max-width: 70vw;
     min-width: 800px;
+    text-align: center;
 }
 
-#tldrSection h3 {
-    font-size: 1.6em;
-    margin: 0;
-}
 
 #tldrSection h2 {
     font-size: 4em;
@@ -1513,8 +1510,14 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    border: 1px solid white;
+    flex-direction: row;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
   }
+
+.tablinks {
+    flex-grow: 1;
+}
 
   #tldrSection div {
     text-align: center;
@@ -1630,4 +1633,10 @@ h1, h2, h3 {
     position: relative;
     bottom: 0;
     width: calc(100% - 40px);
+}
+
+.tabHeading {
+    font-size: 2em;
+    margin: 20px 40px;
+    width: auto;
 }

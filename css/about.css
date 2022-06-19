@@ -1512,7 +1512,8 @@ h1, h2, h3 {
     overflow: hidden;
     flex-direction: row;
     border-top: 1px solid white;
-    border-bottom: 1px solid white;
+
+    max-width: 900px;
   }
 
 .tablinks {
@@ -1548,15 +1549,28 @@ h1, h2, h3 {
   /* Create an active/current tablink class */
   .tab button.active {
     background-color: #000;
+    text-decoration: underline;
+    text-decoration-color: #cb1860;
   }
   
   /* Style the tab content */
   .tabcontent {
     display: none;
-    border: 1px solid #ccc;
     border-top: none;
   }
+  .hrTableLine {
+    width: 100vw;
+    position: relative;
+    margin-top: 0;
+  }
 
+  #folioTabs {
+    margin-bottom: 0;
+  }
+
+  .tabcontentAbout {
+    border: 1px solid white;
+  }
 
 
 #footerAbout {
@@ -1626,7 +1640,7 @@ h1, h2, h3 {
 }
 
 #portfolioSection {
-    width: 70vw;
+
 }
 
 #footerContact {
@@ -1648,4 +1662,14 @@ h1, h2, h3 {
     min-height: 300px;
     flex-direction: column;
     padding: 80px;
+}
+
+#portfolioContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabContentContainer a {
+    text-align: center;
 }

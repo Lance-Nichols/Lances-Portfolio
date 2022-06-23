@@ -39,6 +39,9 @@
     .sectionHeading {
         font-size: 3em;
     }
+    #TLDRHeading {
+        font-size: 3em !important;
+    }
 
     #lottieHeader {
         width: 95%; 
@@ -150,6 +153,19 @@
 
     .halfHalfRight {
         padding: 0 20px 40px 20px;
+    }
+
+    #menuLeft, #menuRight {
+        display: none;
+    }
+    .tabHeading {
+        font-size: 1em;
+        letter-spacing: 1px;
+        margin: 10px 20px;
+        width: auto;
+    }
+    #tldrSection p {
+        font-size: 1em;
     }
 
 }
@@ -287,6 +303,21 @@
 
     .halfHalfRight {
         padding: 0 20px 40px 20px;
+    }
+    #menuLeft, #menuRight {
+        display: none;
+    }
+    .tabHeading {
+        font-size: 1.5em;
+        margin: 20px 40px;
+        width: auto;
+    }
+    #tldrSection p {
+        font-size: 1em;
+    }
+
+    #folioTabs button, #aboutTabs button  {
+        padding: 14px 16px;
     }
   }
 
@@ -433,7 +464,20 @@
     .mobileOnlyBR {
         display: none;
     }
-    
+    #menuLeft, #menuRight {
+        display: none;
+    }
+    .tabHeading {
+        font-size: 1.8em;
+        margin: 20px 30px;
+        width: auto;
+    }
+    #tldrSection p {
+        font-size: 1.2em;
+    }
+    #folioTabs button, #aboutTabs button  {
+        padding: 0;
+    }
 
 }
   @media only screen  and (min-width : 1024px) {
@@ -683,6 +727,23 @@
 
     .halfHalfRight {
         padding: 0 20px 40px 20px;
+    }
+    #menuLeft, #menuRight {
+        display: flex;
+    }
+    .tabHeading {
+        font-size: 2em;
+        margin: 20px 40px;
+        width: auto;
+    }
+    .mobileOnly {
+        display: none;
+    }
+    #tldrSection p {
+        font-size: 1.2em;
+    }
+    #folioTabs button, #aboutTabs button  {
+        padding: 14px 16px;
     }
     
   }  
@@ -1429,7 +1490,6 @@ footer {
     color: #000;
     font-family: 'Migra';
     padding: 0;
-    display: flex;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
@@ -1480,7 +1540,7 @@ h1, h2, h3 {
     flex-direction: column;
     justify-content: center;
     max-width: 70vw;
-    min-width: 800px;
+    min-width: 400px;
     text-align: center;
 }
 
@@ -1492,8 +1552,7 @@ h1, h2, h3 {
 }
 
 #tldrSection p {
-   font-family: 'NeueMontreal-Regular'; 
-   font-size: 1.2em;
+   font-family: 'NeueMontreal-Regular'!important; 
    line-height: 1.8;
    margin: 0 0 10px 0;
 }
@@ -1504,6 +1563,7 @@ h1, h2, h3 {
     align-content: center;
     min-height: 300px;
     flex-direction: column;
+    text-align: center;
 }
 
 .tab {
@@ -1525,20 +1585,19 @@ h1, h2, h3 {
   }
   
   /* Style the buttons that are used to open the tab content */
-  .tab button {
+  #folioTabs button, #aboutTabs button  {
     background-color: inherit;
     float: left;
     border-style: none;
     border-left: 1px solid white;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
     transition: 0.3s;
     color: white;
   }
   
   #lastButton, #lastButton2 {
-    border-right: 1px solid white;
+    border-right: 1px solid white !important;
   }
 
   /* Change background color of buttons on hover */
@@ -1647,12 +1706,6 @@ h1, h2, h3 {
     position: relative;
     bottom: 0;
     width: calc(100% - 40px);
-}
-
-.tabHeading {
-    font-size: 2em;
-    margin: 20px 40px;
-    width: auto;
 }
 
 .tabContentContainerFolio {

@@ -36,14 +36,14 @@
             </div>
             <div id="sideMenu">
                 <div id="menuItemContainer">
-                    <div id="menuLeft"><h2 class="menuLabel"><img src='/images/diamondicon.png' class="menuLabelIcon">MENU<img src='/images/diamondicon.png' class="menuLabelIcon"></h2></div>
+                    <div id="menuLeft" class="hideOnSmall"><h2 class="menuLabel"><img src='/images/diamondicon.png' class="menuLabelIcon">MENU<img src='/images/diamondicon.png' class="menuLabelIcon"></h2></div>
                     <ul id="navMenu">
                         <li class="navMenuListItem"><a href="index.html" class="menuItem">Main</a></li>
                         <li class="navMenuListItem"><a href="about.html" class="menuItem">About</a></li>
                         <li class="navMenuListItem"><a href="portfolio.html" class="menuItem strikeThrough3">Portfolio</a></li>
                         <li class="navMenuListItem"><a href="contact.html" class="menuItem">Contact</a></li>
                     </ul>
-                    <div id="menuRight"><h2 class="menuLabel"><img src='/images/diamondicon.png' class="menuLabelIcon">MENU<img src='/images/diamondicon.png' class="menuLabelIcon"></h2></div>
+                    <div id="menuRight" class="hideOnSmall"><h2 class="menuLabel"><img src='/images/diamondicon.png' class="menuLabelIcon">MENU<img src='/images/diamondicon.png' class="menuLabelIcon"></h2></div>
                     <div id="moltenMonoIMG"><img src="/images/moltenPinkVertCrop.png"></div>
                 </div>
             </div>
@@ -56,26 +56,13 @@
                 <div id="portfolioContent">
                     <h2></h2>
                     <div class="tab" id="folioTabs">
-                        <button class="tablinks" onclick="openPortfolio(event, 'GraphicDigital')"><h3 class="tabHeading">Graphic & Digital</h3></button>
+                        <button class="tablinks" onclick="openPortfolio(event, 'GraphicDigital')"><h3 class="tabHeading">Graphic<br class="mobileOnly"> & Digital</h3></button>
                         <button id="loadOpen" class="tablinks" onclick="openPortfolio(event, 'UxUi')"><h3 class="tabHeading">UX & UI</h3></button>
-                        <button id="lastButton2" class="tablinks" onclick="openPortfolio(event, 'PersonalProjects')"><h3 class="tabHeading">Personal Projects</h3></button>
+                        <button id="lastButton2" class="tablinks" onclick="openPortfolio(event, 'PersonalProjects')"><h3 class="tabHeading">Personal<br class="mobileOnly"> Projects</h3></button>
                     </div>  
                     <hr class="hrTableLine">   
                     <div id="UxUi" class="tabcontent">
                         <div class="tabContentContainerFolio">
-                            <!--<div class="folioCard">
-                                <div class="cardHalfHalf cardLeftHalf">
-                                    <img class="folioCardImg" src="">
-                                </div>
-                                <div class="cardHalfHalf cardRightHalf">
-                                    <div class="cardTitle">TITLE GOES HERE</div>
-                                    <div class="cardDescript">DESCRIPTION GOES HERE</div>
-                                    <div class="cardInfo">
-                                        <div class="cardInfoDate">00/00/00</div>
-                                        <a href="#" class="hover-1"><div class="cardInfoLook">View Project</div></a>
-                                    </div>
-                                </div>
-                            </div>-->
                             <section id="projectSectionContainer">
                                 <section class="flexContainer">
                                     <div  class="projectPreviews">

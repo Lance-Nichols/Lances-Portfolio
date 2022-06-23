@@ -150,6 +150,9 @@
     .mobileOnlyBR {
         display: block;
     }
+    .hideOnSmall {
+        display: none;
+    }
 
 }
 @media screen and (min-width: 601px) and (max-width : 768px) {
@@ -1472,7 +1475,6 @@ footer {
     color: #000;
     font-family: 'Migra';
     padding: 0;
-    display: flex;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;

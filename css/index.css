@@ -150,7 +150,7 @@
     .mobileOnlyBR {
         display: block;
     }
-    .hideOnSmall {
+    #menuLeft, #menuRight {
         display: none;
     }
 
@@ -288,6 +288,9 @@
     }
     .mobileOnlyBR {
         display: block;
+    }
+    #menuLeft, #menuRight {
+        display: none;
     }
   }
 
@@ -449,6 +452,9 @@
     }
     .mobileOnlyBR {
         display: none;
+    }
+    #menuLeft, #menuRight {
+        display: flex;
     }
 
 }
@@ -699,6 +705,9 @@
     }
     .mobileOnlyBR {
         display: none;
+    }
+    #menuLeft, #menuRight {
+        display: flex;
     }
     
   }  

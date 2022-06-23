@@ -1717,7 +1717,7 @@ h1, h2, h3 {
     align-content: center;
     min-height: 300px;
     flex-direction: column;
-    padding: 80px;
+    padding: 80px 0;
 }
 
 #portfolioContent {

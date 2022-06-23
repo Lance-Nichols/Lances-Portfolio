@@ -9,6 +9,9 @@
      .menuItem {
         font-size: 5em;
     }
+    #navMenu {
+        top: 45%;
+    }
     .mobileSectionHeading {
         display: block;
         line-height: 1;
@@ -182,6 +185,9 @@
     .desktopSectionHeading {
         display: none;
     }
+    #navMenu {
+        top: 45%;
+    }
 
     #lottieHeader {
         width: 70%; 
@@ -326,6 +332,9 @@
 
   @media only screen and (min-width : 768px) and (max-width : 1023px) {
     
+    #navMenu {
+        top: 50%;
+    }
     .mobileSectionHeading {
         display: none;
     }
@@ -485,6 +494,9 @@
 }
   @media only screen  and (min-width : 1024px) {
     
+    #navMenu {
+        top: 50%;
+    }
     .mobileSectionHeading {
         display: none;
     }
@@ -1437,7 +1449,6 @@ footer {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

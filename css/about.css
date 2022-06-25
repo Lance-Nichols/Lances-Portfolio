@@ -1587,7 +1587,8 @@ h1, h2, h3 {
     min-height: 300px;
     flex-direction: column;
     text-align: center;
-    font-family: 'NeueMontreal-Regular'; 
+    font-family: 'NeueMontreal';
+    font-weight: 500; 
 }
 
 .tab {

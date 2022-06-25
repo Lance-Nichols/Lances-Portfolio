@@ -164,8 +164,10 @@
     .tabHeading {
         font-size: 1em;
         letter-spacing: 1px;
-        margin: 10px 20px;
         width: auto;
+    }
+    .tablinks {
+        padding: 10px 20px;
     }
     #tldrSection p {
         font-size: 1em;
@@ -318,8 +320,10 @@
     }
     .tabHeading {
         font-size: 1.5em;
-        margin: 20px 40px;
         width: auto;
+    }
+    .tablinks {
+        padding: 20px 40px;
     }
     #tldrSection p {
         font-size: 1em;
@@ -481,8 +485,10 @@
     }
     .tabHeading {
         font-size: 1.8em;
-        margin: 20px 30px;
         width: auto;
+    }
+    .tablinks {
+        padding: 20px 30px;
     }
     #tldrSection p {
         font-size: 1.2em;
@@ -750,6 +756,9 @@
         font-size: 2em;
         margin: 20px 40px;
         width: auto;
+    }
+    .tablinks {
+        padding: 20px 40px;
     }
     .mobileOnly {
         display: none;

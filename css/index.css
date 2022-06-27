@@ -1075,6 +1075,13 @@ header {
     background-position: center;
 }
 
+#qupImage {
+    background-image: url(../images/qup-project-image_2.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 .projectDescription {
     font-family: 'NeueMontreal';
     text-align: left;

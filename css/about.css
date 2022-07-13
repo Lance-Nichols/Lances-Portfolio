@@ -1759,3 +1759,55 @@ h1, h2, h3 {
 .tabContentContainer a {
     text-align: center;
 }
+
+#folioHeader {
+    display: flex;
+}
+
+#folioHeaderImage {
+    background-image: url("../images/b-dog-wire.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -50px;
+    width: 800px;
+    height: 782px;
+    transition: 2s;
+    z-index: -5;
+    background-size: contain;
+}
+
+.animate-morph {
+    animation-name: move;
+    transform-origin: 50%;
+    animation: move 12s ease-in-out infinite alternate;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes move {
+    0% {
+        transform: scaleX(1);
+    }
+    20% {
+        transform: scale(1, .95) translateX(2%);
+    }
+    50% {
+        transform: scale(.95, 1) skewX(2deg) translateX(3%);
+    }
+    80% {
+        transform: scale(1, .95) translate(3%, -4%);
+    }
+    100% {
+        transform: scale(1, 1) skewX(-2deg) translate(0, -3%);
+    }
+}
+
+#folioHeaderTitle:hover + #folioHeaderImage {
+    background-image: url("../images/b-dog-render.png");
+}

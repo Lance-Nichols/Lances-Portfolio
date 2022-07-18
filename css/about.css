@@ -1764,17 +1764,22 @@ h1, h2, h3 {
     display: flex;
 }
 
+#folioHeaderTitle {
+    font-size: 12em;
+    line-height: 1em;
+}
+
 #folioHeaderImage {
-    background-image: url("../images/b-dog-wire.png");
+    background-image: url("../images/unicorn-wire.png");
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: space;
     position: absolute;
-    top: 10px;
-    width: 800px;
-    height: 782px;
+    top: 50px;
+    width: 100vw;
+    height: 655px;
     transition: 2s;
     z-index: -5;
-    background-size: contain;
+    background-size:auto;
 }
 
 .animate-morph {
@@ -1809,5 +1814,5 @@ h1, h2, h3 {
 }
 
 #folioHeaderTitle:hover + #folioHeaderImage {
-    background-image: url("../images/b-dog-render.png");
+    background-image: url("../images/unicorn-render.png");
 }

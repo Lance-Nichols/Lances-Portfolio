@@ -1096,12 +1096,12 @@ header {
     background-position: center;
 }
 
-.projectDescription {
+.projectDescription, .folioDesc {
     font-family: 'NeueMontreal';
     text-align: left;
 }
 
-.projectDesc a, #profileIntro a  {
+.projectDesc a, #profileIntro a, .folioTitle a  {
       text-decoration: none;
       color: white;
       height: auto;
@@ -1214,24 +1214,7 @@ header {
     margin-right: 0;
 }
 
-.skillTag {
-      font-family: "NeueMontreal";
-      border: 1px solid white;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border-radius: 300px;
-      letter-spacing: 1px;
-}
 
-.wrapperTags {
-    display: grid;
-    gap: 5px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
-    width: 280px;
-    padding: 25px 10px;
-}
 
 #designWrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -1815,4 +1798,89 @@ h1, h2, h3 {
 
 #folioHeaderTitle:hover + #folioHeaderImage {
     background-image: url("../images/unicorn-render.png");
+}
+
+.folioTitle {
+    text-align: left;
+    margin: 0;
+}
+.folioDesc {
+
+}
+
+.skillTag {
+    font-family: "NeueMontreal";
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 300px;
+    letter-spacing: 1px;
+    width: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.companyTag, .skillUsedTag {
+    background-color: white;
+    color: #000;
+    font-weight: bold;
+}
+
+.companyTag, .featuredTag {
+    margin-bottom: 20px;
+}
+
+.wrapperTags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featuredTag{
+    background-color: #cb1860;
+}
+
+#folioSlabContent {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.plainLink {
+    color: white;
+}
+
+.folioSlab {
+    display: flex;
+    box-sizing: content-box;
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    width: auto;
+    align-content: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.folioSlabL {
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    border-right: 1px solid white;
+    display: flex;
+}
+.folioSlabR {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+#bpiCrufts, #pfCoffee {
+    min-width: 390px;
+    min-height: 380px;
+    display: flex;
+    position: relative;
+    margin: 0;
 }

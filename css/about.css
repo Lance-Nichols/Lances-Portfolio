@@ -1068,13 +1068,7 @@ header {
     background-color: transparent;
 }
 
-.projectImage {
-    background-size: cover;
-    background-color: white;
-    width: calc(100% - 30px);
-    margin: 15px;
-    height: 250px;
-}
+
 
 #deseImage {
     background-image: url(../images/DESE-project-image_2.gif);
@@ -1883,4 +1877,12 @@ h1, h2, h3 {
     display: flex;
     position: relative;
     margin: 0;
+}
+
+.projectImageFolio {
+    background-size: cover;
+    background-color: white;
+    width: calc(100% - 30px);
+    margin: 15px;
+    height: 370px;
 }

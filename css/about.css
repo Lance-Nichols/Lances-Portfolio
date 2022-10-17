@@ -1810,6 +1810,7 @@ h1, h2, h3 {
 
 .skillTag {
     font-family: "NeueMontreal";
+    font-size: x-small;
     border: 1px solid white;
     padding: 5px 15px;
     border-radius: 300px;

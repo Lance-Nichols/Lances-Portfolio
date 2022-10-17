@@ -1838,10 +1838,9 @@ h1, h2, h3 {
     background-color: #cb1860;
 }
 
-#folioSlabContent {
+#folioSlabContent, #folioSlabContent2 {
     display: flex;
     flex-direction: column;
-    
 }
 
 .plainLink {

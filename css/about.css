@@ -1832,7 +1832,7 @@ h1, h2, h3 {
     background-color: #cb1860;
 }
 
-#folioSlabContent, #folioSlabContent2 {
+#folioSlabContent, #folioSlabContent2, #folioSlabContent3 {
     display: flex;
     flex-direction: column;
 }

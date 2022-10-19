@@ -1886,3 +1886,73 @@ h1, h2, h3 {
     margin: 15px;
     height: 370px;
 }
+
+
+/*
+FOLIO IMAGE SLIDERS
+*/
+
+.mySlides {
+    display: none
+  }
+  .sliderImg {
+    vertical-align: middle;
+  }
+  .slideshow-container {
+    max-width: 360px;
+    position: relative;
+    margin: auto;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 30px 30px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 30px 0 0 30px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(203, 24, 96, 0.8);
+  }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+
+/*
+END FOLIO IMAGE SLIDERS
+*/

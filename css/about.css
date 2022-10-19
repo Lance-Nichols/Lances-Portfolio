@@ -1855,11 +1855,12 @@ h1, h2, h3 {
 }
 
 .folioSlabL {
-    height: 400px;
-    width: 400px;
+    height: 440px;
+    width: 440px;
     padding: 20px;
     border-right: 1px solid white;
     display: flex;
+    box-sizing: border-box;
 }
 .folioSlabR {
     display: flex;
@@ -1892,12 +1893,7 @@ h1, h2, h3 {
 FOLIO IMAGE SLIDERS
 */
 .mySlides {
-    
-  }
-
-  .sliderImg {
-    width: 360px;
-    height: 360px;
+    display: none;
   }
 
   .slideshow-container {
@@ -1905,6 +1901,9 @@ FOLIO IMAGE SLIDERS
     height: 360px;
     position: relative;
     margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid yellowgreen;
   }
   /* Next & previous buttons */
   .prev,

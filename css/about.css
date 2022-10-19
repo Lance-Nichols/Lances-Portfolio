@@ -1891,15 +1891,19 @@ h1, h2, h3 {
 /*
 FOLIO IMAGE SLIDERS
 */
+.slideshow-container {
+    box-sizing: border-box
+  }
 
 .mySlides {
     display: none
   }
-  .sliderImg {
+  img .sliderImg {
     vertical-align: middle;
   }
   .slideshow-container {
-    max-width: 360px;
+    width: 360px;
+    height: 360px;
     position: relative;
     margin: auto;
   }

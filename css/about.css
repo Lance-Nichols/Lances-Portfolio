@@ -6,6 +6,17 @@
         font-style: normal;
         letter-spacing: 1px
      }
+
+     #folioHeaderTitle {
+        font-size: 4em;
+        line-height: 1em;
+        position: absolute;
+        top: 15%;
+    }
+    #folioHeaderImage {
+        height: 350px;
+    }
+
      .menuItem {
         font-size: 5em;
     }
@@ -52,7 +63,7 @@
     }
 
     header {
-        height: 60vh;
+        height: 30vh;
         width: 100vw;
     }
 
@@ -176,8 +187,39 @@
         display: none;
     }
 
+    .folioSlab {
+        width: min-content;
+        max-width: 300px;
+    }
+    .folioSlabL {
+        border-bottom: 1px solid white;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .folioSlabR {
+        box-sizing: content-box;
+        min-height: fit-content;
+        height: auto;
+    }
+
+    .slideshow-container {
+        max-width: 260px;
+        max-height: 260px;
+    }
+
 }
 @media screen and (min-width: 601px) and (max-width : 768px) {
+
+    #folioHeaderImage {
+        height: 350px;
+    }
+
+    #folioHeaderTitle {
+        font-size: 6em;
+        line-height: 1em;
+        position: absolute;
+        top: 12%;
+    }
 
     .mobileSectionHeading {
         display: block;
@@ -196,7 +238,7 @@
         height: auto;
     }
     header {
-        height: 80vh;
+        height: 30vh;
     }
     .sectionHeading {
         font-size: 3.5em;
@@ -332,10 +374,42 @@
     #folioTabs button, #aboutTabs button  {
         padding: 14px 16px;
     }
+
+    .folioSlab {
+        width: min-content;
+        max-width: 400px;
+    }
+    .folioSlabL {
+        border-bottom: 1px solid white;
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .folioSlabR {
+        box-sizing: content-box;
+        min-height: fit-content;
+        height: auto;
+    }
+
+    .slideshow-container {
+        max-width: 380px;
+        max-height: 380px;
+    }
+
   }
 
   @media only screen and (min-width : 768px) and (max-width : 1023px) {
     
+    #folioHeaderImage {
+        height: 655px;
+    }
+
+    #folioHeaderTitle {
+        font-size: 8em;
+        line-height: 1em;
+        position: absolute;
+        top: 20%;
+    }
+
     #navMenu {
         top: 50%;
     }
@@ -352,7 +426,7 @@
         height: auto;
     }
     header {
-        height: 80vh;
+        height: 50vh;
     }
     .sectionHeading {
         font-size: 3.5em;
@@ -497,9 +571,41 @@
         padding: 0;
     }
 
+
+    .folioSlab {
+        width: min-content;
+        max-width: 450px;
+    }
+    .folioSlabL {
+        border-bottom: 1px solid white;
+        max-width: 450px;
+        max-height: 450px;
+    }
+    .folioSlabR {
+        box-sizing: content-box;
+        min-height: fit-content;
+        height: auto;
+    }
+
+    .slideshow-container {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
 }
   @media only screen  and (min-width : 1024px) {
-    
+
+    #folioHeaderImage {
+        height: 655px;
+    }
+
+    #folioHeaderTitle {
+        font-size: 12em;
+        line-height: 1em;
+        position: absolute;
+        top: 18%;
+    }
+
     #navMenu {
         top: 50%;
     }
@@ -770,6 +876,33 @@
         padding: 14px 16px;
     }
     
+    .folioSlab {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 1px solid white;
+        align-content: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    .folioSlabL {
+        height: 440px;
+        width: 440px;
+        padding: 20px;
+        display: flex;
+        box-sizing: border-box;
+        border-right: 1px solid white;
+    }
+    .folioSlabR {
+        display: flex;
+        flex-direction: column;
+        min-height: 400px;
+        width: 400px;
+        padding: 20px;
+        justify-content: center;
+        align-content: center;
+    }
   }  
   @media only screen  and (min-width : 1224px) {
 
@@ -1739,24 +1872,19 @@ h1, h2, h3 {
 
 #folioHeader {
     display: flex;
-}
-
-#folioHeaderTitle {
-    font-size: 12em;
-    line-height: 1em;
+    align-items: center;
 }
 
 #folioHeaderImage {
     background-image: url("../images/unicorn-wire.png");
     background-position: center;
     background-repeat: space;
-    position: absolute;
-    top: 50px;
     width: 100vw;
-    height: 655px;
     transition: 2s;
     z-index: -5;
-    background-size:auto;
+    background-size: contain;
+    position: absolute;
+    top: 50px;
 }
 
 .animate-morph {
@@ -1843,12 +1971,9 @@ h1, h2, h3 {
 
 .folioSlab {
     display: flex;
-    box-sizing: content-box;
-    width: auto;
     flex-direction: row;
     flex-wrap: wrap;
     border: 1px solid white;
-    width: auto;
     align-content: center;
     justify-content: center;
     margin: 20px 0;
@@ -1858,14 +1983,13 @@ h1, h2, h3 {
     height: 440px;
     width: 440px;
     padding: 20px;
-    border-right: 1px solid white;
     display: flex;
     box-sizing: border-box;
 }
 .folioSlabR {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    min-height: 400px;
     width: 400px;
     padding: 20px;
     justify-content: center;
@@ -1894,6 +2018,8 @@ FOLIO IMAGE SLIDERS
 */
 .mySlides {
     display: none;
+    width: 100%;
+    height: 100%;
   }
 
   .slideshow-container {
@@ -1903,7 +2029,7 @@ FOLIO IMAGE SLIDERS
     margin: auto;
     box-sizing: border-box;
     display: flex;
-    border: 1px solid yellowgreen;
+    overflow: hidden;
   }
   /* Next & previous buttons */
   .prev,

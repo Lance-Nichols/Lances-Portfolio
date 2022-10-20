@@ -603,7 +603,7 @@
         font-size: 12em;
         line-height: 1em;
         position: absolute;
-        top: 18%;
+        top: 15%;
     }
 
     #navMenu {
@@ -622,7 +622,7 @@
         height: auto;
     }
     header {
-        height: 70vh;
+        height: 55vh;
     }
     .sectionHeading {
         font-size: 3.5em;
